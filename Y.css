@@ -3150,24 +3150,16 @@ font-family: 'Playfair Display', serif;
 
     color:#94a3b8;
 }
+
 /* =========================
    MOBILE FIX - TEXT OVERFLOW
 ========================= */
-
 @media (max-width: 768px) {
 
-    /* يمنع أي قص أفقي */
     body {
         overflow-x: hidden;
     }
 
-    /* يمنع العناصر تتمدد خارج الشاشة */
-    * {
-        box-sizing: border-box;
-        max-width: 100%;
-    }
-
-    /* أي flex ما يكسر النص */
     .hero-content,
     .navbar,
     .about-card,
@@ -3176,28 +3168,13 @@ font-family: 'Playfair Display', serif;
         flex-wrap: wrap;
     }
 
-    /* يمنع أي عنصر يكون أكبر من الشاشة */
-    img, div, section {
+    img {
         max-width: 100%;
+        height: auto;
     }
 
-    /* إصلاح النصوص الطويلة */
-    p, h1, h2, h3, h4, h5, h6, span {
-        word-wrap: break-word;
-        overflow-wrap: break-word;
+    p, h1, h2, h3, span {
         white-space: normal;
-    }
-
-    /* إصلاح أي card */
-    .card,
-    .box,
-    .education-card,
-    .experience-card {
-        width: 100%;
-    }
-
-    /* منع أي absolute يطلع برا */
-    [style*="position: absolute"] {
-        max-width: 100%;
+        overflow: visible;
     }
 }
