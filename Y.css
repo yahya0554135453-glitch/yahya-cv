@@ -3160,7 +3160,7 @@ font-family: 'Playfair Display', serif;
 /* =========================
    MOBILE FIX - TEXT OVERFLOW
 ========================= */
-@media (max-width: 768px) {
+@media (max-width: 76px) {
 
     body {
         overflow-x: hidden;
