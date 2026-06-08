@@ -3150,110 +3150,54 @@ font-family: 'Playfair Display', serif;
 
     color:#94a3b8;
 }
-
 /* =========================
-      MOBILE RESPONSIVE
+   MOBILE FIX - TEXT OVERFLOW
 ========================= */
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
 
-    /* Hero */
-
-    .hero-content{
-
-        flex-direction: column;
-
-        text-align: center;
-
-        gap: 40px;
+    /* يمنع أي قص أفقي */
+    body {
+        overflow-x: hidden;
     }
 
-    .hero-text h1{
-
-        font-size: 36px;
+    /* يمنع العناصر تتمدد خارج الشاشة */
+    * {
+        box-sizing: border-box;
+        max-width: 100%;
     }
 
-    .hero-image img{
-
-        width: 180px;
-
-        height: 180px;
-    }
-
-    /* Navbar */
-
-    .navbar{
-
-        flex-direction: column;
-
-        gap: 20px;
-    }
-
-    .nav-links{
-
+    /* أي flex ما يكسر النص */
+    .hero-content,
+    .navbar,
+    .about-card,
+    .education-card,
+    .experience-card {
         flex-wrap: wrap;
-
-        justify-content: center;
     }
 
-    /* Sections */
-
-    .section{
-
-        padding: 60px 20px;
+    /* يمنع أي عنصر يكون أكبر من الشاشة */
+    img, div, section {
+        max-width: 100%;
     }
 
-    h2{
-
-        font-size: 32px !important;
+    /* إصلاح النصوص الطويلة */
+    p, h1, h2, h3, h4, h5, h6, span {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
     }
 
-    /* Education */
-
-    .education-card{
-
+    /* إصلاح أي card */
+    .card,
+    .box,
+    .education-card,
+    .experience-card {
         width: 100%;
     }
 
-    /* Experience */
-
-    .experience-card{
-
-        width: 100%;
-    }
-
-    /* Skills */
-
-    .skills-grid{
-
-        grid-template-columns: 1fr;
-    }
-
-    /* Certificates */
-
-    .certificates-grid{
-
-        grid-template-columns: repeat(2,1fr);
-    }
-
-    /* Languages */
-
-    .languages-grid{
-
-        grid-template-columns: 1fr;
-    }
-
-    /* Hobbies */
-
-    .hobbies-grid{
-
-        grid-template-columns: repeat(2,1fr);
-    }
-
-    /* Footer */
-
-    .footer{
-
-        text-align: center;
+    /* منع أي absolute يطلع برا */
+    [style*="position: absolute"] {
+        max-width: 100%;
     }
 }
