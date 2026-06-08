@@ -1,0 +1,176 @@
+{
+    "name": "Yahya Nasser Mohammed Damri" ,
+    
+    "about": "About",
+    "education": "Education",
+    "experience": "Experience",
+    "skills": "Skills",
+    "more": "More ▾",
+    "softSkills": "Soft Skills",
+    "languages": "Languages",
+    "interests": "Interests",
+
+  "aboutTag": "ABOUT ME",
+  "aboutTitle": "Building Creative & Smart Digital Experiences",
+  "aboutText": "A motivated entry-level Information Technology professional with strong computer skills and solid proficiency in Microsoft Office applications. Passionate about technology, problem-solving, and continuously improving my technical expertise while working effectively in professional environments.",
+
+  "graduationYear": "Graduation Year",
+  "informationTechnology": "Information Technology",
+  "projects": "Projects",
+
+  "certificateBtn": "View University Certificate",
+
+  "creativeMind": "Creative IT Mind",
+  "creativeMindText": "Passionate about building elegant and modern systems.",
+
+    "educationTag": "EDUCATION",
+    "academicJourney": "Academic Journey",
+
+    "educationDescription": "My academic path focused on Information Technology and Information Security, where I developed technical, analytical, and problem-solving skills while working on modern technologies and digital systems.",
+
+    "universityName": "Jazan University",
+
+    "collegeName": "College of Computer Science & Engineering",
+
+    "degreeTitle": "Bachelor's Degree",
+
+    "degreeDescription": "Information Technology – Information Security Track",
+
+    "graduationText": "Graduation 2025",
+    
+    "experienceTag": "WORK EXPERIENCE",
+    "experienceTitle": "Professional Experience",
+
+    "experienceDate": "11/2025 – 02/2025",
+
+    "organizationName": "Ahd Al-Masarha Governorate",
+    "organizationType": "Government Entity",
+
+    "positionTitle": "Administrative Inquiries Center",
+    "positionSubtitle": "Practical Training within the Work Team",
+
+    "experienceDescription": "Handling citizens' and visitors' inquiries, archiving and following up on electronic transactions, managing internal mail and official correspondence, efficiently using the government electronic transactions system, and organizing workflow to ensure accurate completion of tasks.",
+
+    "trainingBtn": "📄 View Training Certificate" ,
+    
+  "skillsTag": "SOFTWARE SKILLS",
+  "skillsTitle": "Technical Skills & Certifications",
+  "skillsDesc": "Continuously improving my technical knowledge and developing new professional skills in technology and digital systems.",
+  
+  "skill1Title": "Microsoft Office",
+  "skill1Desc": "Proficient in Word, Excel, and PowerPoint.",
+
+  "skill2Title": "Internet & Platforms",
+  "skill2Desc": "Strong ability to use internet and social media effectively.",
+
+  "skill3Title": "Windows OS",
+  "skill3Desc": "Good knowledge of Windows operating systems.",
+
+  "skill4Title": "Troubleshooting",
+  "skill4Desc": "Ability to solve simple technical problems efficiently.",
+
+  "skill5Title": "Professional Email",
+  "skill5Desc": "Ability to use email and communication professionally.",
+
+
+  "certTag": "MY CERTIFICATES",
+  "certTitle": "Future Learning Journey",
+
+  "cert1": "Cyber Security",
+  "cert2": "Networking Basics",
+  "cert3": "HTML & CSS",
+  "cert4": "JavaScript",
+  "cert5": "Python Basics",
+  "cert6": "Database Systems",
+  "cert7": "UI / UX Design",
+  "cert8": "Graphic Design",
+  "cert9": "MongoDB",
+  "cert10": "Linux Essentials",
+  "cert11": "Cloud Computing",
+  "cert12": "AI Fundamentals",
+
+
+
+  "personalTag": "PERSONAL SKILLS",
+  "personalTitle": "Professional Strengths",
+  "personalDesc": "Personal qualities that help me work efficiently, collaborate effectively, and continuously improve in professional environments.",
+
+  "ps1": "Problem Solving",
+  "ps1Desc": "Managing tasks and solving challenges effectively.",
+
+  "ps2": "Quick Learning",
+  "ps2Desc": "Ability to adapt and learn new technologies quickly.",
+
+  "ps3": "Independent & Team Work",
+  "ps3Desc": "Able to work independently or as part of a team.",
+
+  "ps4": "Computer Applications",
+  "ps4Desc": "Proficient in Microsoft Office and computer tools.",
+
+  "ps5": "Communication Skills",
+  "ps5Desc": "Strong communication and interpersonal abilities.",
+
+  "langTag": "LANGUAGES",
+  "langTitle": "Language Proficiency",
+  "langDesc": "Languages that help me communicate, learn, and connect with people from different cultures.",
+
+  "lang1": "Arabic",
+  "lang1Desc": "Native Language",
+
+  "lang2": "English",
+  "lang2Desc": "Advanced",
+
+  "lang3": "Turkish",
+  "lang3Desc": "Beginner+",
+
+  "lang4": "Japanese",
+  "lang4Desc": "Beginner",
+
+  "lang5": "Chinese",
+  "lang5Desc": "Beginner",
+
+
+  "hobbiesTag": "INTERESTS & HOBBIES",
+  "hobbiesTitle": "Personal Interests",
+
+  "hobby1": "Cybersecurity Research",
+  "hobby2": "Web Development",
+  "hobby3": "Artificial Intelligence",
+  "hobby4": "Exploring New Technologies",
+  "hobby5": "Computer Hardware",
+  "hobby6": "Cloud Computing",
+  "hobby7": "Continuous Learning",
+  "hobby8": "Graphic Design",
+  "hobby9": "Drawing",
+  "hobby10": "Swimming",
+  "hobby11": "Running",
+
+
+
+  "footerTitle": "Looking for New Opportunities",
+  "footerText": "This portfolio has been created to showcase my academic background, technical skills, certifications, and practical projects. I am currently seeking an opportunity where I can contribute, gain valuable experience, and continue developing my professional career in the technology field.",
+  "footerBtn": "Leave a Review",
+
+  "siteMapTitle": "Site Map",
+
+  "linkAbout": "About",
+  "linkEducation": "Education",
+  "linkExperience": "Experience",
+  "linkSkills": "Skills",
+  "linkSoftSkills": "Soft Skills",
+  "linkLanguages": "Languages",
+  "linkCertificates": "Certificates",
+  "linkHobbies": "Interests",
+  "linkContact": "Contact",
+
+  "reviewsTitle": "Latest Reviews",
+  "noReviewText": "No reviews yet",
+
+
+  "reviewTitle": "Portfolio Review",
+  "reviewName": "Your Name",
+  "reviewText": "Write your feedback...",
+  "submitBtn": "Submit",
+  "closeBtn": "Close",
+  "charCounter": "0 / 200"
+}

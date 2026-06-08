@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+
+<html lang="ar">
+
+<head>
+
+    <!-- =========================
+            معلومات الصفحة
+    ========================== -->
+
+    <!-- ترميز اللغة -->
+    <meta charset="UTF-8">
+
+    <!-- جعل الموقع متجاوب مع جميع الأجهزة -->
+    <meta name="viewport"  content="width=device-width, initial-scale=1.0" >
+
+    <!-- عنوان الصفحة -->
+    <title>
+        Yahya CV
+    </title>
+
+    <!-- استدعاء الخط من Google Fonts -->
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" 
+        rel="stylesheet"
+    >
+
+    <!-- ربط ملف CSS -->
+    <link 
+        rel="stylesheet" 
+        href="Y.css"
+    >
+
+</head>
+
+<body>
+
+<!-- =========================
+            الهيدر
+========================= -->
+
+<header class="hero">
+
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+
+        <!-- الشعار -->
+        <h2 class="logo">
+            CV
+        </h2>
+
+        <!-- روابط التنقل -->
+        <ul class="nav-links">
+
+            <li>
+        <a id="aboutNav" data-key="about" href="#about">
+            About
+        </a>
+    </li>
+
+    <li>
+        <a id="educationNav" data-key="education" href="#education">
+            Education
+        </a>
+    </li>
+
+    <li>
+        <a id="experienceNav" data-key="experience" href="#experience">
+            Experience
+        </a>
+    </li>
+
+    <li>
+        <a id="skillsNav" data-key="skills" href="#skills">
+            Skills
+        </a>
+    </li>
+
+    <!-- القائمة المنسدلة -->
+    <li class="dropdown">
+
+        <a id="moreNav" data-key="more" href="#">
+            More ▾
+        </a>
+
+        <!-- عناصر القائمة -->
+        <ul class="dropdown-menu">
+
+            <li>
+                <a id="softSkillsNav"
+                   data-key="softSkills"
+                   href="#personal-skills">
+                    Soft Skills
+                </a>
+            </li>
+
+            <li>
+                <a id="languagesNav"
+                   data-key="languages"
+                   href="#languages">
+                    Languages
+                </a>
+            </li>
+
+            <li>
+                <a id="interestsNav"
+                   data-key="interests"
+                   href="#hobbies">
+                    Interests
+                </a>
+            </li>
+
+                </ul>
+
+            </li>
+
+        </ul>
+
+        <!-- زر تغيير اللغة -->
+        <button id="langBtn"> </button>
+
+    </nav>
+
+    <!-- محتوى الهيدر -->
+    <div class="hero-content">
+
+        <!-- الجزء الأيسر -->
+        <div class="hero-text">
+
+            <!-- الاسم -->
+           <h1 id="name" data-key="name"> Yahya Nasser Mohammed Damri</h1>
+
+        </div>
+
+        <!-- الصورة الشخصية -->
+        <div class="hero-image">
+
+            <img 
+                src="yn.jpeg" 
+                alt="Yahya"
+            >
+
+        </div>
+
+    </div>
+
+</header>
+<!-- =========================
+            نبذة عني
+========================= -->
+
+<section id="about" class="about-section">
+
+    <div class="about-card">
+
+        <!-- Left Side -->
+        <div class="about-content">
+            
+            <span id="aboutTag" data-key="aboutTag" class="about-tag">
+                ABOUT ME
+            </span>
+
+            <h2 id="aboutTitle" data-key="aboutTitle">
+                Building Creative & Smart Digital Experiences
+            </h2>
+
+            <p id="aboutText" data-key="aboutText">
+                A motivated entry-level Information Technology professional with
+                strong computer skills and solid proficiency in Microsoft Office
+                applications.
+
+                Passionate about technology, problem-solving, and continuously
+                improving my technical expertise while working effectively in
+                professional environments.
+            </p>
+
+            <!-- Stats -->
+            <div class="about-stats">
+
+                <div class="stat-box">
+                    <h3>2025</h3>
+                    <span id="graduationYear" data-key="graduationYear">
+                        Graduation Year
+                    </span>
+                </div>
+
+                <div class="stat-box">
+
+                    <h3>IT</h3>
+
+                    <span id="informationTechnology" data-key="informationTechnology">
+                        Information Technology
+                    </span>
+
+                </div>
+
+                <div class="stat-box">
+
+                    <h3>+3</h3>
+
+                    <span id="projects" data-key="projects">
+                        Projects
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- Buttons -->
+            <div class="about-buttons">
+
+                <button
+                    id="certificateBtn"
+                    data-key="certificateBtn">
+                    View University Certificate
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Right Side -->
+        <div class="about-design">
+
+            <div class="circle one"></div>
+
+            <div class="circle two"></div>
+
+            <div class="glass-card">
+
+                <h3
+                    id="creativeMind"
+                    data-key="creativeMind">
+                    Creative IT Mind
+                </h3>
+
+                <p
+                    id="creativeMindText"
+                    data-key="creativeMindText">
+                    Passionate about building elegant and modern systems.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+    <!-- Certificate Popup -->
+    <div id="universityModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn"> &times; </span>
+            <img  src="image.png" alt="University Certificate">  
+            </div>
+    </div>
+</section>
+
+<section id="education" class="education-section">
+
+    <!-- Background Glow -->
+    <div class="edu-glow"></div>
+
+    <!-- Main Card -->
+    <div class="education-card">
+
+        <!-- Left Side -->
+        <div class="education-left">
+
+            <span
+                id="educationTag"
+                data-key="educationTag"
+                class="edu-tag">
+                EDUCATION
+            </span>
+
+            <h2
+                id="academicJourney"
+                data-key="academicJourney">
+                Academic Journey
+            </h2>
+
+            <p
+                id="educationDescription"
+                data-key="educationDescription"
+                class="edu-desc">
+
+                My academic path focused on Information Technology and
+                Information Security, where I developed technical,
+                analytical, and problem-solving skills while working
+                on modern technologies and digital systems.
+
+            </p>
+
+            <!-- Timeline -->
+            <div class="edu-timeline">
+
+                <div class="timeline-dot"></div>
+
+                <span>
+                    2022 — 2025
+                </span>
+
+            </div>
+
+        </div>
+
+        <!-- Right Side -->
+        <div class="education-right">
+
+            <!-- University Card -->
+            <div class="university-box">
+
+                <!-- Top -->
+                <div class="uni-top">
+
+                    <div class="uni-icon">
+                        🎓
+                    </div>
+
+                    <div>
+
+                        <h3
+                            id="universityName"
+                            data-key="universityName">
+                            Jazan University
+                        </h3>
+
+                        <span
+                            id="collegeName"
+                            data-key="collegeName">
+                            College of Computer Science & Engineering
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <!-- Degree -->
+                <div class="degree-box">
+
+                    <h4
+                        id="degreeTitle"
+                        data-key="degreeTitle">
+                        Bachelor's Degree
+                    </h4>
+
+                    <p
+                        id="degreeDescription"
+                        data-key="degreeDescription">
+                        Information Technology
+                        – Information Security Track
+                    </p>
+
+                </div>
+
+                <!-- Bottom -->
+                <div class="edu-footer">
+
+                    <div class="footer-line"></div>
+
+                    <span
+                        id="graduationText"
+                        data-key="graduationText">
+                        Graduation 2025
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================
+            الخبرات العملية
+========================= -->
+
+<section id="experience" class="experience-section">
+
+    <!-- خطوط الخلفية -->
+    <div class="exp-lines"></div>
+
+    <!-- عنوان القسم -->
+    <div class="experience-header">
+
+        <span
+            id="experienceTag"
+            data-key="experienceTag"
+            class="exp-tag">
+            WORK EXPERIENCE
+        </span>
+
+        <h2
+            id="experienceTitle"
+            data-key="experienceTitle">
+            Professional Experience
+        </h2>
+
+    </div>
+
+    <!-- بطاقة الخبرة -->
+    <div class="experience-card">
+
+        <!-- الخط الزمني -->
+        <div class="experience-timeline">
+
+            <div class="timeline-circle"></div>
+
+            <div class="timeline-line"></div>
+
+        </div>
+
+        <!-- محتوى البطاقة -->
+        <div class="experience-content">
+
+            <!-- التاريخ -->
+            <div
+                id="experienceDate"
+                data-key="experienceDate"
+                class="exp-date">
+
+                11/2025 – 02/2025
+
+            </div>
+
+            <!-- الصندوق الرئيسي -->
+            <div class="experience-box">
+
+                <!-- الجزء العلوي -->
+                <div class="experience-top">
+
+                    <!-- الأيقونة -->
+                    <div class="experience-icon">
+                        💼
+                    </div>
+
+                    <!-- معلومات الجهة -->
+                    <div>
+
+                        <h3
+                            id="organizationName"
+                            data-key="organizationName">
+                            Ahd Al-Masarha Governorate
+                        </h3>
+
+                        <span
+                            id="organizationType"
+                            data-key="organizationType">
+                            Government Entity
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <!-- المسمى -->
+                <div class="position-box">
+
+                    <h4
+                        id="positionTitle"
+                        data-key="positionTitle">
+                        Administrative Inquiries Center
+                    </h4>
+
+                    <p
+                        id="positionSubtitle"
+                        data-key="positionSubtitle">
+                        Practical Training within the Work Team
+                    </p>
+
+                </div>
+
+                <!-- وصف الخبرة -->
+                <div class="experience-description">
+
+                    <p
+                        id="experienceDescription"
+                        data-key="experienceDescription">
+
+                        Handling citizens' and visitors' inquiries,
+                        archiving and following up on electronic
+                        transactions, managing internal mail and
+                        official correspondence, efficiently using
+                        the government electronic transactions system,
+                        and organizing workflow to ensure accurate
+                        completion of tasks.
+
+                    </p>
+
+                </div>
+
+                <!-- زر الوثيقة -->
+                <div class="experience-buttons">
+
+                    <button
+                        id="trainingBtn"
+                        data-key="trainingBtn">
+
+                        📄 View Training Certificate
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================
+        نافذة الوثيقة
+========================= -->
+
+<div id="trainingModal" class="training-modal">
+
+    <div class="training-content">
+
+        <!-- زر الإغلاق -->
+        <span class="training-close">
+            &times;
+        </span>
+
+        <!-- صورة الوثيقة -->
+        <img 
+            src="A.png" 
+            alt="Training Certificate"
+        >
+
+    </div>
+
+</div>
+
+<!-- =========================
+        TECHNICAL SKILLS
+========================= -->
+
+<section id="skills" class="skills-section">
+
+    <!-- Background Glow -->
+    <div class="skills-glow"></div>
+
+    <!-- Header -->
+    <div class="skills-header">
+
+        <span id="skillsTag" data-key="skillsTag">
+            SOFTWARE SKILLS
+        </span>
+
+        <h2 id="skillsTitle" data-key="skillsTitle">
+            Technical Skills & Certifications
+        </h2>
+
+        <p id="skillsDesc" data-key="skillsDesc">
+            Continuously improving my technical knowledge and developing
+            new professional skills in technology and digital systems.
+        </p>
+
+    </div>
+
+ <!-- =========================
+        SKILLS GRID
+========================= -->
+
+<div class="skills-grid">
+
+    <!-- Card -->
+    <div class="skill-card">
+
+        <div class="skill-icon">
+            🖥️
+        </div>
+
+        <h3 id="skill1Title" data-key="skill1Title">
+            Microsoft Office
+        </h3>
+
+        <p id="skill1Desc" data-key="skill1Desc">
+            Proficient in Word, Excel, and PowerPoint.
+        </p>
+
+    </div>
+
+    <!-- Card -->
+    <div class="skill-card">
+
+        <div class="skill-icon">
+            🌐
+        </div>
+
+        <h3 id="skill2Title" data-key="skill2Title">
+            Internet & Platforms
+        </h3>
+
+        <p id="skill2Desc" data-key="skill2Desc">
+            Strong ability to use internet and social media effectively.
+        </p>
+
+    </div>
+
+    <!-- Card -->
+    <div class="skill-card">
+
+        <div class="skill-icon">
+            💻
+        </div>
+
+        <h3 id="skill3Title" data-key="skill3Title">
+            Windows OS
+        </h3>
+
+        <p id="skill3Desc" data-key="skill3Desc">
+            Good knowledge of Windows operating systems.
+        </p>
+
+    </div>
+
+    <!-- Card -->
+    <div class="skill-card">
+
+        <div class="skill-icon">
+            🛠️
+        </div>
+
+        <h3 id="skill4Title" data-key="skill4Title">
+            Troubleshooting
+        </h3>
+
+        <p id="skill4Desc" data-key="skill4Desc">
+            Ability to solve simple technical problems efficiently.
+        </p>
+
+    </div>
+
+    <!-- Card -->
+    <div class="skill-card">
+
+        <div class="skill-icon">
+            📧
+        </div>
+
+        <h3 id="skill5Title" data-key="skill5Title">
+            Professional Email
+        </h3>
+
+        <p id="skill5Desc" data-key="skill5Desc">
+            Ability to use email and communication professionally.
+        </p>
+
+    </div>
+
+</div>
+<!-- =========================
+        CERTIFICATES
+========================= -->
+
+<div class="certificates-area">
+
+    <!-- Header -->
+    <div class="certificates-header">
+
+        <span id="certTag" data-key="certTag">
+            MY CERTIFICATES
+        </span>
+
+        <h2 id="certTitle" data-key="certTitle">
+            Future Learning Journey
+        </h2>
+
+    </div>
+
+    <!-- Files Grid -->
+    <div class="files-grid">
+
+        <!-- FILE 1 -->
+        <div class="file-card">
+            <h3 id="cert1" data-key="cert1">Cyber Security</h3>
+            <div class="file-box openCertificate" data-img="1.png">
+                <div class="file-top"></div>
+                <div class="file-body">📁</div>
+            </div>
+        </div>
+
+        <!-- FILE 2 -->
+        <div class="file-card">
+            <h3 id="cert2" data-key="cert2">Networking Basics</h3>
+            <div class="file-box openCertificate" data-img="2.png">
+                <div class="file-top"></div>
+                <div class="file-body">📁</div>
+            </div>
+        </div>
+
+        <!-- FILE 3 -->
+        <div class="file-card">
+            <h3 id="cert3" data-key="cert3">HTML & CSS</h3>
+            <div class="file-box openCertificate" data-img="3.png">
+                <div class="file-top"></div>
+                <div class="file-body">📁</div>
+            </div>
+        </div>
+
+        <!-- FILE 4 -->
+        <div class="file-card">
+            <h3 id="cert4" data-key="cert4">JavaScript</h3>
+            <div class="file-box openCertificate" data-img="4.png">
+                <div class="file-top"></div>
+                <div class="file-body">📁</div>
+            </div>
+        </div>
+
+        <!-- FILE 5 -->
+        <div class="file-card">
+            <h3 id="cert5" data-key="cert5">Python Basics</h3>
+            <div class="file-box openCertificate" data-img="5.png">
+                <div class="file-top"></div>
+                <div class="file-body">📁</div>
+            </div>
+        </div>
+
+        <!-- FILE 6 -->
+        <div class="file-card">
+            <h3 id="cert6" data-key="cert6">Database Systems</h3>
+            <div class="file-box openCertificate" data-img="6.png">
+                <div class="file-top"></div>
+                <div class="file-body">📁</div>
+            </div>
+        </div>
+
+        <!-- FILE 7 -->
+        <div class="file-card">
+            <h3 id="cert7" data-key="cert7">UI / UX Design</h3>
+            <div class="file-box openCertificate" data-img="7.png">
+                <div class="file-top"></div>
+                <div class="file-body">📁</div>
+            </div>
+        </div>
+
+        <!-- FILE 8 -->
+        <div class="file-card">
+            <h3 id="cert8" data-key="cert8">Graphic Design</h3>
+            <div class="file-box openCertificate" data-img="8.png">
+                <div class="file-top"></div>
+                <div class="file-body">📁</div>
+            </div>
+        </div>
+
+        <!-- FILE 9 -->
+        <div class="file-card">
+            <h3 id="cert9" data-key="cert9">MongoDB</h3>
+            <div class="file-box openCertificate" data-img="9.png">
+                <div class="file-top"></div>
+                <div class="file-body">📁</div>
+            </div>
+        </div>
+
+        <!-- FILE 10 -->
+        <div class="file-card">
+            <h3 id="cert10" data-key="cert10">Linux Essentials</h3>
+            <div class="file-box openCertificate" data-img="10.png">
+                <div class="file-top"></div>
+                <div class="file-body">📁</div>
+            </div>
+        </div>
+
+        <!-- FILE 11 -->
+        <div class="file-card">
+            <h3 id="cert11" data-key="cert11">Cloud Computing</h3>
+            <div class="file-box openCertificate" data-img="11.png">
+                <div class="file-top"></div>
+                <div class="file-body">📁</div>
+            </div>
+        </div>
+
+        <!-- FILE 12 -->
+        <div class="file-card">
+            <h3 id="cert12" data-key="cert12">AI Fundamentals</h3>
+            <div class="file-box openCertificate" data-img="12.png">
+                <div class="file-top"></div>
+                <div class="file-body">📁</div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    <!-- =========================
+            CERTIFICATE MODAL
+    ========================= -->
+
+    <div id="certificateModal" class="certificate-modal">
+
+        <div class="certificate-content">
+
+            <!-- Close -->
+            <span class="certificate-close">
+                &times;
+            </span>
+
+            <!-- Dynamic Image -->
+            <img 
+                id="certificateImage"src=""alt="Certificate" >
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+        PERSONAL SKILLS
+========================= -->
+
+<section id="personal-skills" class="personal-section">
+
+    <div class="personal-header">
+
+        <span id="personalTag" data-key="personalTag">
+            PERSONAL SKILLS
+        </span>
+
+        <h2 id="personalTitle" data-key="personalTitle">
+            Professional Strengths
+        </h2>
+
+        <p id="personalDesc" data-key="personalDesc">
+            Personal qualities that help me work efficiently,
+            collaborate effectively, and continuously improve
+            in professional environments.
+        </p>
+
+    </div>
+
+    <div class="skills-network">
+
+        <div class="personal-card">
+            <div class="skill-number">1</div>
+            <h3 id="ps1" data-key="ps1">Problem Solving</h3>
+            <p id="ps1Desc" data-key="ps1Desc">
+                Managing tasks and solving challenges effectively.
+            </p>
+        </div>
+
+        <div class="personal-card">
+            <div class="skill-number">2</div>
+            <h3 id="ps2" data-key="ps2">Quick Learning</h3>
+            <p id="ps2Desc" data-key="ps2Desc">
+                Ability to adapt and learn new technologies quickly.
+            </p>
+        </div>
+
+        <div class="personal-card">
+            <div class="skill-number">3</div>
+            <h3 id="ps3" data-key="ps3">Independent & Team Work</h3>
+            <p id="ps3Desc" data-key="ps3Desc">
+                Able to work independently or as part of a team.
+            </p>
+        </div>
+
+        <div class="personal-card">
+            <div class="skill-number">4</div>
+            <h3 id="ps4" data-key="ps4">Computer Applications</h3>
+            <p id="ps4Desc" data-key="ps4Desc">
+                Proficient in Microsoft Office and computer tools.
+            </p>
+        </div>
+
+        <div class="personal-card">
+            <div class="skill-number">5</div>
+            <h3 id="ps5" data-key="ps5">Communication Skills</h3>
+            <p id="ps5Desc" data-key="ps5Desc">
+                Strong communication and interpersonal abilities.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+            اللغات
+========================= -->
+
+<section id="languages" class="languages-section">
+
+    <div class="languages-header">
+
+        <span id="langTag" data-key="langTag">
+            LANGUAGES
+        </span>
+
+        <h2 id="langTitle" data-key="langTitle">
+            Language Proficiency
+        </h2>
+
+        <p id="langDesc" data-key="langDesc">
+            Languages that help me communicate, learn,
+            and connect with people from different cultures.
+        </p>
+
+    </div>
+
+    <div class="languages-row">
+
+        <div class="language-item">
+
+            <div class="flag">🇸🇦</div>
+
+            <h3 id="lang1" data-key="lang1">Arabic</h3>
+            <p id="lang1Desc" data-key="lang1Desc">Native Language</p>
+
+            <div class="stars">★★★★★</div>
+
+        </div>
+
+        <div class="language-item">
+
+            <div class="flag">🇬🇧</div>
+
+            <h3 id="lang2" data-key="lang2">English</h3>
+            <p id="lang2Desc" data-key="lang2Desc">Advanced</p>
+
+            <div class="stars">★★★☆☆</div>
+
+        </div>
+
+        <div class="language-item">
+
+            <div class="flag">🇹🇷</div>
+
+            <h3 id="lang3" data-key="lang3">Turkish</h3>
+            <p id="lang3Desc" data-key="lang3Desc">Beginner+</p>
+
+            <div class="stars">★★☆☆☆</div>
+
+        </div>
+
+        <div class="language-item">
+
+            <div class="flag">🇯🇵</div>
+
+            <h3 id="lang4" data-key="lang4">Japanese</h3>
+            <p id="lang4Desc" data-key="lang4Desc">Beginner</p>
+
+            <div class="stars">★★☆☆☆</div>
+
+        </div>
+
+        <div class="language-item">
+
+            <div class="flag">🇨🇳</div>
+
+            <h3 id="lang5" data-key="lang5">Chinese</h3>
+            <p id="lang5Desc" data-key="lang5Desc">Beginner</p>
+
+            <div class="stars">★★☆☆☆</div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================
+            الاهتمامات
+========================= -->
+
+<section id="hobbies" class="hobbies-section">
+
+    <div class="hobbies-header">
+
+        <span id="hobbiesTag" data-key="hobbiesTag">
+            INTERESTS & HOBBIES
+        </span>
+
+        <h2 id="hobbiesTitle" data-key="hobbiesTitle">
+            Personal Interests
+        </h2>
+
+    </div>
+
+    <div class="hobbies-grid">
+
+        <div class="hobby-card">
+            <span class="emoji">🔐</span>
+            <h3 id="hobby1" data-key="hobby1">Cybersecurity Research</h3>
+        </div>
+
+        <div class="hobby-card">
+            <span class="emoji">🌐</span>
+            <h3 id="hobby2" data-key="hobby2">Web Development</h3>
+        </div>
+
+        <div class="hobby-card">
+            <span class="emoji">🤖</span>
+            <h3 id="hobby3" data-key="hobby3">Artificial Intelligence</h3>
+        </div>
+
+        <div class="hobby-card">
+            <span class="emoji">📱</span>
+            <h3 id="hobby4" data-key="hobby4">Exploring New Technologies</h3>
+        </div>
+
+        <div class="hobby-card">
+            <span class="emoji">🖥️</span>
+            <h3 id="hobby5" data-key="hobby5">Computer Hardware</h3>
+        </div>
+
+        <div class="hobby-card">
+            <span class="emoji">☁️</span>
+            <h3 id="hobby6" data-key="hobby6">Cloud Computing</h3>
+        </div>
+
+        <div class="hobby-card">
+            <span class="emoji">📚</span>
+            <h3 id="hobby7" data-key="hobby7">Continuous Learning</h3>
+        </div>
+
+        <div class="hobby-card">
+            <span class="emoji">🎨</span>
+            <h3 id="hobby8" data-key="hobby8">Graphic Design</h3>
+        </div>
+
+        <div class="hobby-card">
+            <span class="emoji">✏️</span>
+            <h3 id="hobby9" data-key="hobby9">Drawing</h3>
+        </div>
+
+        <div class="hobby-card">
+            <span class="emoji">🏊</span>
+            <h3 id="hobby10" data-key="hobby10">Swimming</h3>
+        </div>
+
+        <div class="hobby-card">
+            <span class="emoji">🏃</span>
+            <h3 id="hobby11" data-key="hobby11">Running</h3>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+        FOOTER SECTION
+========================= -->
+
+<footer class="footer-section">
+
+    <div class="footer-overlay"></div>
+
+    <div class="footer-container">
+
+        <!-- LEFT -->
+        <div class="footer-about">
+
+            <img src="image-18.png" class="footer-logo" alt="Logo">
+
+         <h2 id="footerTitle" data-key="footerTitle">
+        Looking for New Opportunities
+           </h2>
+
+           <p id="footerText" data-key="footerText">
+        This portfolio has been created to showcase my academic background,
+        technical skills, certifications, and practical projects.
+
+        I am currently seeking an opportunity where I can contribute, gain
+        valuable experience, and continue developing my professional career
+        in the technology field.
+    </p>
+    
+            <button
+        class="review-button"
+        onclick="openReview()"
+        id="reviewBtn"
+        data-key="reviewBtn">
+
+        Leave a Review
+
+    </button>
+        </div>
+
+        <!-- SITE MAP -->
+        <div class="footer-sitemap">
+
+<h3 id="siteMapTitle" data-key="siteMapTitle">
+        Site Map
+    </h3>
+            <div class="site-links">
+
+        <a href="#about" data-key="siteAbout">About</a>
+
+        <a href="#education" data-key="siteEducation">Education</a>
+
+        <a href="#experience" data-key="siteExperience">Experience</a>
+
+        <a href="#skills" data-key="siteSkills">Skills</a>
+
+        <a href="#personal-skills" data-key="siteSoftSkills">Soft Skills</a>
+
+        <a href="#languages" data-key="siteLanguages">Languages</a>
+
+        <a href="#certificates" data-key="siteCertificates">Certificates</a>
+
+        <a href="#hobbies" data-key="siteInterests">Interests</a>
+
+        <a href="#contact" data-key="siteContact">Contact</a>
+
+    </div>
+
+            <!-- REVIEWS -->
+            <div class="reviews-preview">
+
+  <h4 id="latestReviewsTitle" data-key="latestReviewsTitle">
+        Latest Reviews
+    </h4>
+                <div id="reviewsContainer">
+                    <p class="no-review">No reviews yet</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- CONTACT -->
+        <div class="footer-contact">
+
+            <h3>Contact</h3>
+
+            <div class="contact-grid">
+
+                <div class="contact-box">
+                    <span>📧</span>
+                    <h4>Email</h4>
+                    <p>yahya0554135453@gmail.com</p>
+                </div>
+
+                <div class="contact-box">
+                      <span>📍</span>
+                    <h4>Location</h4>
+                    <p>Jazan Saudi Arabia</p>
+                </div>
+
+                <div class="contact-box">
+                    <span>📱</span>
+                    <h4>Phone</h4>
+                    <p> +966 55 413 5453</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="copyright-bar">
+        <p>© 2026 Yahya Nasser Damri — All Rights Reserved</p>
+    </div>
+
+</footer>
+
+<!-- =========================
+        REVIEW POPUP
+========================= -->
+
+<div id="reviewPopup" class="review-popup">
+
+    <div class="review-content">
+
+        <h2>Portfolio Review</h2>
+
+        <input id="reviewName" type="text" placeholder="Your Name">
+
+        <div class="star-rating">
+
+            <span data-rate="1">★</span>
+            <span data-rate="2">★</span>
+            <span data-rate="3">★</span>
+            <span data-rate="4">★</span>
+            <span data-rate="5">★</span>
+
+        </div>
+
+        <textarea
+            id="reviewText"
+            maxlength="200"
+            placeholder="Write your feedback..."
+        ></textarea>
+
+        <div id="charCounter" class="char-counter">
+            0 / 200
+        </div>
+
+        <div class="review-actions">
+
+            <button onclick="submitReview()">Submit</button>
+            <button onclick="closeReview()">Close</button>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- ربط ملف JavaScript -->
+<script src="Y.js"></script>
+
+</body>
+
+</html>
