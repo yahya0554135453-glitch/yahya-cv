@@ -3150,3 +3150,110 @@ font-family: 'Playfair Display', serif;
 
     color:#94a3b8;
 }
+
+/* =========================
+      MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px){
+
+    /* Hero */
+
+    .hero-content{
+
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 40px;
+    }
+
+    .hero-text h1{
+
+        font-size: 36px;
+    }
+
+    .hero-image img{
+
+        width: 180px;
+
+        height: 180px;
+    }
+
+    /* Navbar */
+
+    .navbar{
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .nav-links{
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    /* Sections */
+
+    .section{
+
+        padding: 60px 20px;
+    }
+
+    h2{
+
+        font-size: 32px !important;
+    }
+
+    /* Education */
+
+    .education-card{
+
+        width: 100%;
+    }
+
+    /* Experience */
+
+    .experience-card{
+
+        width: 100%;
+    }
+
+    /* Skills */
+
+    .skills-grid{
+
+        grid-template-columns: 1fr;
+    }
+
+    /* Certificates */
+
+    .certificates-grid{
+
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    /* Languages */
+
+    .languages-grid{
+
+        grid-template-columns: 1fr;
+    }
+
+    /* Hobbies */
+
+    .hobbies-grid{
+
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    /* Footer */
+
+    .footer{
+
+        text-align: center;
+    }
+}
