@@ -9,6 +9,10 @@
 }
 
 body{
+     margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    
     background:
     linear-gradient(
         180deg,
@@ -16,6 +20,8 @@ body{
         #111827 100%
     );
 
+
+   
     color: #111827;
     font-family: Arial, sans-serif;
 }
@@ -3160,21 +3166,61 @@ font-family: 'Playfair Display', serif;
         overflow-x: hidden;
     }
 
-    .hero-content,
-    .navbar,
-    .about-card,
-    .education-card,
-    .experience-card {
-        flex-wrap: wrap;
+    /* الهيدر */
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
     }
 
-    img {
-        max-width: 100%;
+    /* الصورة */
+    .hero-image img {
+        width: 180px;
         height: auto;
     }
 
-    p, h1, h2, h3, span {
-        white-space: normal;
-        overflow: visible;
+    /* النافبار */
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+
+    /* الأقسام */
+    section {
+        padding: 40px 15px;
+    }
+
+    /* الكروت */
+    .about-stats,
+    .skills-grid,
+    .files-grid,
+    .languages-row,
+    .hobbies-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* النصوص */
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    /* الأزرار */
+    button {
+        width: 100%;
     }
 }
