@@ -20,8 +20,6 @@ body{
         #111827 100%
     );
 
-
-   
     color: #111827;
     font-family: Arial, sans-serif;
 }
@@ -247,7 +245,8 @@ font-family: 'Playfair Display', serif;
     color: #ffffff;
     letter-spacing: 2px;
     text-transform: uppercase;
-    white-space: nowrap;
+    white-space: normal;
+    word-break: break-word;
     
     text-shadow: 0 4px 15px rgba(0,0,0,0.35);
 }
@@ -3158,69 +3157,228 @@ font-family: 'Playfair Display', serif;
 }
 
 /* =========================
-   MOBILE FIX - TEXT OVERFLOW
+      MOBILE RESPONSIVE
 ========================= */
-@media (max-width: 76px) {
 
-    body {
+@media (max-width: 768px){
+
+    body{
         overflow-x: hidden;
     }
 
-    /* الهيدر */
-    .hero-content {
+    .hero,
+    .navbar,
+    .hero-content,
+    .about-card,
+    .education-card,
+    .experience-card,
+    .footer-container{
+        width: 100%;
+    }
+
+    /* Navbar */
+
+    .navbar{
         flex-direction: column;
+        padding: 20px;
+        gap: 15px;
         text-align: center;
-        gap: 20px;
     }
 
-    /* الصورة */
-    .hero-image img {
-        width: 180px;
-        height: auto;
-    }
-
-    /* النافبار */
-    .navbar {
-        flex-direction: column;
+    .nav-links{
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 10px;
+    }
+
+    .nav-links a{
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    /* Hero */
+
+    .hero-content{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .hero-text h1{
+        font-size: 28px;
+        white-space: normal;
+        line-height: 1.4;
+        word-break: break-word;
+    }
+
+    .hero-image img{
+        width: 180px;
+        height: 180px;
+    }
+
+    /* About */
+
+    .about-section{
+        padding: 80px 20px;
+    }
+
+    .about-card{
+        flex-direction: column;
+        padding: 30px 20px;
+        min-height: auto;
+    }
+
+    .about-content h2{
+        font-size: 32px;
+    }
+
+    .about-content p{
+        font-size: 16px;
+    }
+
+    .about-stats{
+        flex-direction: column;
         align-items: center;
     }
 
-    .nav-links {
-        flex-direction: column;
-        gap: 10px;
-        padding: 0;
-    }
-
-    /* الأقسام */
-    section {
-        padding: 40px 15px;
-    }
-
-    /* الكروت */
-    .about-stats,
-    .skills-grid,
-    .files-grid,
-    .languages-row,
-    .hobbies-grid {
-        grid-template-columns: 1fr !important;
-    }
-
-    /* النصوص */
-    h1 {
-        font-size: 28px;
-    }
-
-    h2 {
-        font-size: 22px;
-    }
-
-    p {
-        font-size: 14px;
-    }
-
-    /* الأزرار */
-    button {
+    .stat-box{
         width: 100%;
+        max-width: 280px;
+    }
+
+    .glass-card{
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+    }
+
+    /* Education */
+
+    .education-section{
+        padding: 80px 20px;
+    }
+
+    .education-card{
+        flex-direction: column;
+        padding: 30px 20px;
+        min-height: auto;
+    }
+
+    .education-left h2{
+        font-size: 35px;
+    }
+
+    .university-box{
+        width: 100%;
+    }
+
+    /* Experience */
+
+    .experience-section{
+        padding: 80px 20px;
+    }
+
+    .experience-card{
+        flex-direction: column;
+    }
+
+    .experience-timeline{
+        display: none;
+    }
+
+    .experience-box{
+        padding: 25px;
+    }
+
+    .experience-header h2{
+        font-size: 35px;
+    }
+
+    .experience-top{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Skills */
+
+    .skills-section{
+        padding: 80px 20px;
+    }
+
+    .skills-header h2{
+        font-size: 35px;
+    }
+
+    .skills-grid{
+        grid-template-columns: 1fr;
+    }
+
+    /* Certificates */
+
+    .files-grid{
+        grid-template-columns: 1fr;
+    }
+
+    /* Personal Skills */
+
+    .personal-section{
+        padding: 80px 20px;
+    }
+
+    .personal-header h2{
+        font-size: 35px;
+    }
+
+    /* Languages */
+
+    .languages-section{
+        padding: 80px 20px;
+    }
+
+    .languages-header h2{
+        font-size: 35px;
+    }
+
+    .languages-row{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Hobbies */
+
+    .hobbies-section{
+        padding: 80px 20px;
+    }
+
+    .hobbies-header h2{
+        font-size: 35px;
+    }
+
+    .hobbies-grid{
+        grid-template-columns: 1fr;
+    }
+
+    /* Footer */
+
+    .footer-container{
+        grid-template-columns: 1fr;
+        padding: 0 20px 50px;
+        text-align: center;
+    }
+
+    .contact-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .site-links{
+        justify-content: center;
+    }
+
+    /* الصور المنبثقة */
+
+    .modal-content,
+    .training-content,
+    .certificate-content{
+        width: 95%;
     }
 }
