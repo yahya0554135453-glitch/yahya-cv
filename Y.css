@@ -43,11 +43,18 @@ body{
     );
 
 }
-
 /* =========================
    Navbar
 ========================= */
 .navbar{
+
+    position: fixed;
+
+    top: 15px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
 
     display: flex;
 
@@ -57,166 +64,195 @@ body{
 
     width: 96%;
 
-    margin: 15px auto 35px;
+    margin: 0 auto;
 
     padding: 18px 40px;
 
-    background: linear-gradient(135deg,#ffffff,#f1f5f9);
+    background: rgba(255,255,255,.88);
 
-    border: 1px solid #dbe4ee;
+    backdrop-filter: blur(18px);
+
+    -webkit-backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255,255,255,.25);
 
     border-radius: 20px;
 
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    box-shadow: 0 12px 30px rgba(0,0,0,.12);
+
+    z-index: 9999;
+
+    transition: all .35s ease;
+}
+
+/* عند النزول */
+.navbar.scrolled{
+
+    top: 10px;
+
+    width: 94%;
+
+    padding: 14px 35px;
+
+    border-radius: 16px;
+
+    background: rgba(255,255,255,.94);
+
+    box-shadow: 0 18px 40px rgba(0,0,0,.18);
 }
 
 /* Logo */
 .logo{
-    font-size: 32px;
 
-    font-weight: bold;
+    font-size:32px;
 
-    color: #00b4d8;
+    font-weight:bold;
+
+    color:#00b4d8;
 }
 
-/* =========================
-   Menu
-========================= */
+/* Menu */
 .nav-links{
 
-    display: flex;
+    display:flex;
 
-    align-items: center;
+    align-items:center;
 
-    gap: 28px;
+    gap:28px;
 
-    list-style: none;
+    list-style:none;
 }
 
 /* الروابط */
 .nav-links a{
 
-    color: #111827;
+    color:#111827;
 
-    text-decoration: none;
+    text-decoration:none;
 
-    font-size: 16px;
+    font-size:16px;
 
-    font-weight: 600;
+    font-weight:600;
 
-    padding: 10px 14px;
+    padding:10px 14px;
 
-    border-radius: 10px;
+    border-radius:10px;
 
-    transition: 0.3s;
+    transition:.3s;
 }
 
 /* Hover */
 .nav-links a:hover{
 
-    background: rgba(0,0,0,0.05);
+    background:rgba(0,0,0,.05);
 
-    color: #00b4d8;
+    color:#00b4d8;
 }
 
-/* =========================
-   Dropdown
-========================= */
+/* Dropdown */
 .dropdown{
-    position: relative;
+
+    position:relative;
 }
 
-/* القائمة */
 .dropdown-menu{
 
-    position: absolute;
+    position:absolute;
 
-    top: 100%;
+    top:100%;
 
-    left: 0;
+    left:0;
 
-    min-width: 200px;
+    min-width:200px;
 
-    margin-top: 10px;
+    margin-top:10px;
 
-    background: white;
+    background:white;
 
-    border: 1px solid #e5e7eb;
+    border:1px solid #e5e7eb;
 
-    border-radius: 15px;
+    border-radius:15px;
 
-    padding: 12px;
+    padding:12px;
 
-    list-style: none;
+    list-style:none;
 
-    opacity: 0;
+    opacity:0;
 
-    visibility: hidden;
+    visibility:hidden;
 
-    transform: translateY(10px);
+    transform:translateY(10px);
 
-    transition: 0.3s ease;
+    transition:.3s;
 
-    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
 
-    z-index: 100;
+    z-index:100;
 }
 
-/* إظهار القائمة */
 .dropdown:hover .dropdown-menu{
 
-    opacity: 1;
+    opacity:1;
 
-    visibility: visible;
+    visibility:visible;
 
-    transform: translateY(0);
+    transform:translateY(0);
 }
 
-/* عناصر القائمة */
 .dropdown-menu li{
-    margin-bottom: 10px;
+
+    margin-bottom:10px;
 }
 
-/* إزالة آخر عنصر */
 .dropdown-menu li:last-child{
-    margin-bottom: 0;
+
+    margin-bottom:0;
 }
 
-/* روابط القائمة */
 .dropdown-menu a{
 
-    display: block;
+    display:block;
 
-    padding: 10px 12px;
+    padding:10px 12px;
 
-    border-radius: 10px;
+    border-radius:10px;
 }
 
-/* Hover */
 .dropdown-menu a:hover{
-    background: rgba(0,0,0,0.05);
+
+    background:rgba(0,0,0,.05);
 }
 
-/* =========================
-   زر اللغة
-========================= */
+/* زر اللغة */
 #langBtn{
 
-    background: linear-gradient(135deg,#0a76a5,#00b4d8);
-    color: white;
-    border: none;
-    padding: 10px 22px;
-    border-radius: 12px;
-    cursor: pointer;
-    font-size: 15px;
-    transition: 0.3s;
+    background:linear-gradient(135deg,#0a76a5,#00b4d8);
+
+    color:white;
+
+    border:none;
+
+    padding:10px 22px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    transition:.3s;
 }
 
-/* Hover */
 #langBtn:hover{
-    transform: scale(1.05);
+
+    transform:scale(1.05);
 }
 
+/* حتى لا يغطي النافبار بداية الصفحة */
+.hero{
+
+    padding-top:110px;
+}
 /* =========================
    Hero Content
 ========================= */
