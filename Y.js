@@ -174,7 +174,6 @@ function updateWelcomePopup(lang) {
     }
 
 }
-
 /* =========================
        1 UNIVERSITY MODAL
 ========================= */
