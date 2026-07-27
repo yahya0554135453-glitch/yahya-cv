@@ -2,7 +2,9 @@ const langBtn = document.getElementById("langBtn");
 
 let currentLang = "en";
 
-/* تحميل اللغة */
+/* ===========================
+   تغيير اللغة
+=========================== */
 
 async function setLanguage(lang) {
 
@@ -10,55 +12,54 @@ async function setLanguage(lang) {
 
     try {
 
-        const response =
-        await fetch(`${lang}.json`);
+        const response = await fetch(`${lang}.json`);
+        const translations = await response.json();
 
-        const translations =
-        await response.json();
-
-        /* تغيير النصوص */
+        /* تغيير جميع النصوص */
 
         document
-        .querySelectorAll("[data-key]")
-        .forEach(element => {
+            .querySelectorAll("[data-key]")
+            .forEach(element => {
 
-            const key =
-            element.getAttribute("data-key");
+                const key = element.getAttribute("data-key");
 
-            if(translations[key]) {
+                if (translations[key]) {
+                    element.textContent = translations[key];
+                }
 
-                element.textContent =
-                translations[key];
-            }
-        });
+            });
 
         /* اتجاه الصفحة */
 
         document.documentElement.dir =
-        lang === "ar" ? "rtl" : "ltr";
+            lang === "ar" ? "rtl" : "ltr";
 
-        document.documentElement.lang =
-        lang;
+        document.documentElement.lang = lang;
 
-        /* نص الزر */
+        /* زر تغيير اللغة */
 
         langBtn.textContent =
-        lang === "ar"
-        ? "English"
-        : "Arabic";
+            lang === "ar"
+            ? "English"
+            : "العربية";
+
+        /* تحديث رسالة الترحيب */
+
+        updateWelcomePopup(lang);
 
     }
 
-    catch(error) {
+    catch (error) {
 
-        console.error(
-            "Language file not found:",
-            error
-        );
+        console.error("Language file not found:", error);
+
     }
+
 }
 
-/* زر التغيير */
+/* ===========================
+   تغيير اللغة بالزر
+=========================== */
 
 langBtn.addEventListener("click", () => {
 
@@ -67,27 +68,109 @@ langBtn.addEventListener("click", () => {
         ? "ar"
         : "en"
     );
+
 });
 
-/* اللغة الافتراضية */
+/* ===========================
+   تحديد لغة الزائر تلقائياً
+=========================== */
 
-setLanguage("en");
+const browserLang = navigator.language || navigator.userLanguage;
+
+if (browserLang.startsWith("ar")) {
+
+    setLanguage("ar");
+
+} else {
+
+    setLanguage("en");
+
+}
+
+/* ===========================
+   Navbar عند النزول
+=========================== */
 
 window.addEventListener("scroll", () => {
 
     const navbar = document.querySelector(".navbar");
 
-    if(window.scrollY > 50){
+    if (window.scrollY > 50) {
 
         navbar.classList.add("scrolled");
 
-    }else{
+    } else {
 
         navbar.classList.remove("scrolled");
 
     }
 
 });
+/* ============================
+        WELCOME POPUP
+============================ */
+
+const popup = document.getElementById("welcomePopup");
+
+const checkbox = document.getElementById("agreeCheck");
+
+const closeBtn = document.getElementById("closePopup");
+
+/* تفعيل الزر */
+
+checkbox.addEventListener("change",()=>{
+
+    closeBtn.disabled=!checkbox.checked;
+
+});
+
+/* إغلاق */
+
+closeBtn.addEventListener("click",()=>{
+
+    popup.style.display="none";
+
+});
+
+/* تغيير اللغة */
+
+function updateWelcomePopup(lang){
+
+if(lang==="ar"){
+
+document.getElementById("popupTitle").textContent=" أهلاً بك في موقعي الشخصي";
+
+document.getElementById("popupText1").textContent="يسعدني زيارتك لمعرض أعمالي وسيرتي الذاتية.";
+
+document.querySelector(".popup-news-title").textContent="✨ حرصت على تطوير هذا الموقع ليعكس رحلتي المهنية بشكل متكامل، لذلك ستجد بالإضافة إلى السيرة الذاتية قسمين متخصصين:";
+
+document.getElementById("popupItem1").textContent="📁 الدليل المهني للمساعد الإداري";
+
+document.getElementById("popupItem2").textContent="🌱 التطوع والتطوير المهني";
+
+document.getElementById("popupAgree").textContent="يرجى قراءة هذه الرسالة قبل متابعة تصفح الموقع";
+
+closeBtn.textContent="دخول الموقع";
+
+}else{
+
+document.getElementById("popupTitle").textContent=" Welcome to My Portfolio";
+
+document.getElementById("popupText1").textContent="Thank you for visiting my personal portfolio and resume.";
+
+document.querySelector(".popup-news-title").textContent="✨ This website has been expanded to better present my professional journey. In addition to my CV, you will find two dedicated sections:";
+
+document.getElementById("popupItem1").textContent="📁 Administrative Assistant Professional Guide";
+
+document.getElementById("popupItem2").textContent="🌱 Volunteering & Professional Development";
+
+document.getElementById("popupAgree").textContent="Please read this message before entering the website.";
+
+closeBtn.textContent="Enter Website";
+
+}
+
+}
 
 /* =========================
        1 UNIVERSITY MODAL
