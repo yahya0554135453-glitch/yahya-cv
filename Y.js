@@ -106,69 +106,72 @@ window.addEventListener("scroll", () => {
     }
 
 });
-/* ============================
-        WELCOME POPUP
-============================ */
+
+/* ===========================
+   رسالة الترحيب
+=========================== */
 
 const popup = document.getElementById("welcomePopup");
-
 const checkbox = document.getElementById("agreeCheck");
-
 const closeBtn = document.getElementById("closePopup");
 
-/* تفعيل الزر */
+checkbox.addEventListener("change", () => {
 
-checkbox.addEventListener("change",()=>{
-
-    closeBtn.disabled=!checkbox.checked;
+    closeBtn.disabled = !checkbox.checked;
 
 });
 
-/* إغلاق */
+closeBtn.addEventListener("click", () => {
 
-closeBtn.addEventListener("click",()=>{
-
-    popup.style.display="none";
+    popup.style.display = "none";
 
 });
 
-/* تغيير اللغة */
+/* ===========================
+   تغيير نص الرسالة حسب اللغة
+=========================== */
 
-function updateWelcomePopup(lang){
+function updateWelcomePopup(lang) {
 
-if(lang==="ar"){
+    if (lang === "ar") {
 
-document.getElementById("popupTitle").textContent=" أهلاً بك في موقعي الشخصي";
+        document.querySelector(".welcome-header h2").innerHTML =
+            "👋 أهلاً بك في موقعي الشخصي";
 
-document.getElementById("popupText1").textContent="يسعدني زيارتك لمعرض أعمالي وسيرتي الذاتية.";
+        document.querySelector(".welcome-body > p").innerHTML =
+            "يسرني زيارتك لمعرض أعمالي وسيرتي الذاتية.";
 
-document.querySelector(".popup-news-title").textContent="✨ حرصت على تطوير هذا الموقع ليعكس رحلتي المهنية بشكل متكامل، لذلك ستجد بالإضافة إلى السيرة الذاتية قسمين متخصصين:";
+        document.querySelector(".new-section p").innerHTML =
+            "✨ تمت إضافة قسمين جديدين داخل الموقع:<br><br>" +
+            "📂 دليل احترافي للمساعد الإداري يشرح المهام والمهارات والأنظمة المستخدمة في بيئة العمل الإدارية.<br><br>" +
+            "🌱 دليل متكامل للتطوع والتطوير المهني يوضح كيفية الاستفادة من الفرص التطوعية لبناء الخبرة وتطوير المسار المهني.";
 
-document.getElementById("popupItem1").textContent="📁 الدليل المهني للمساعد الإداري";
+        document.querySelector(".agree").lastChild.textContent =
+            " لقد قرأت الرسالة وأرغب في متابعة تصفح الموقع.";
 
-document.getElementById("popupItem2").textContent="🌱 التطوع والتطوير المهني";
+        closeBtn.textContent = "دخول الموقع";
 
-document.getElementById("popupAgree").textContent="يرجى قراءة هذه الرسالة قبل متابعة تصفح الموقع";
+    }
 
-closeBtn.textContent="دخول الموقع";
+    else {
 
-}else{
+        document.querySelector(".welcome-header h2").innerHTML =
+            "👋 Welcome to My Portfolio";
 
-document.getElementById("popupTitle").textContent=" Welcome to My Portfolio";
+        document.querySelector(".welcome-body > p").innerHTML =
+            "Thank you for visiting my personal portfolio and resume.";
 
-document.getElementById("popupText1").textContent="Thank you for visiting my personal portfolio and resume.";
+        document.querySelector(".new-section p").innerHTML =
+            "✨ Two new professional sections have been added:<br><br>" +
+            "📂 A complete Administrative Assistant Guide covering daily tasks, office systems, and essential workplace skills.<br><br>" +
+            "🌱 A Professional Volunteering Guide explaining how volunteering helps build experience and develop your career.";
 
-document.querySelector(".popup-news-title").textContent="✨ This website has been expanded to better present my professional journey. In addition to my CV, you will find two dedicated sections:";
+        document.querySelector(".agree").lastChild.textContent =
+            " I have read this message and would like to continue.";
 
-document.getElementById("popupItem1").textContent="📁 Administrative Assistant Professional Guide";
+        closeBtn.textContent = "Enter Website";
 
-document.getElementById("popupItem2").textContent="🌱 Volunteering & Professional Development";
-
-document.getElementById("popupAgree").textContent="Please read this message before entering the website.";
-
-closeBtn.textContent="Enter Website";
-
-}
+    }
 
 }
 
